@@ -171,6 +171,8 @@ async function ActiveSession() {
     } while (true);
 
     function WriteMessages() {
+        if (!fs.existsSync("./Past Convos/")) fs.mkdirSync("./Past Convos/");
+        
         fs.writeFile(`./Past Convos/${ConvoId}.json`, JSON.stringify(messages), (e) => {
             if (e) console.log(e);
         });

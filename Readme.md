@@ -15,4 +15,4 @@ Something I made as a weekend project using Transformers.js
 If you write these, then things will happen.
 - `new` Creates a new conversation
 - `rec \d` Recovers a specific conversation. Put the conversation ID (name of file in ./Past Convos/) where `\d` is.
-- If you put `max=\d` in your message, with `\d` as a number, then the maximum number of tokens will be changed to the number where \d is. This is useful becuase it's a bit slow. 
+- If you put `max=\d` in your message, with `\d` as a number, then the maximum number of tokens will be changed to the number where `\d` is. This is useful becuase it's a bit slow. 
