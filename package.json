@@ -1,0 +1,20 @@
+{
+  "name": "local-ai-test",
+  "version": "1.0.0",
+  "description": "Local AI testing using transformers.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "AI",
+    "Local",
+    "Test",
+    "WIP"
+  ],
+  "author": "micahb.dev",
+  "license": "ISC",
+  "dependencies": {
+    "@xenova/transformers": "^2.14.0"
+  }
+}
