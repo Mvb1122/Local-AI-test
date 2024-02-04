@@ -18,8 +18,6 @@ let tokenizer, model = tokenizer = null;
 async function Run(messages = null, txt = null, settings = null) {
     await preload();
 
-    if (model == null)
-        model = await pipeline('text-generation', model_id);
     /*
     if (model == null)
         model = await AutoModelForCausalLM.from_pretrained("microsoft/phi-2", torch_dtype="auto", trust_remote_code=true)
@@ -31,7 +29,6 @@ async function Run(messages = null, txt = null, settings = null) {
 
     let out = model.generate(inputs, max_length=200);
     console.log(out);
-    // [{'label': 'POSITIVE', 'score': 0.999817686}]
     */
     return new Promise(async (resolve) => {
 
@@ -87,8 +84,9 @@ async function TempTest() {
 async function preload() {
     return new Promise(async res => {
         const { pipeline } = await import("@xenova/transformers");
-        if (model == null)
+        if (model == null) {
             model = await pipeline('text-generation', model_id);
+        }
 
         res();
     })

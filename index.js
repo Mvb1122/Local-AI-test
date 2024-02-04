@@ -1,4 +1,6 @@
-const model_id = "Felladrin-onnx-gpt2-large-conversational-retrain";
+const model_id = "Xenova-TinyLama-1.1B-Chat-v1.0";
+    // Felladrin-onnx-gpt2-large-conversational-retrain
+    // Xenova-TinyLama-1.1B-Chat-v1.0
 
 /**
  * @type {{ 
